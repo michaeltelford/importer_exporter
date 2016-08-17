@@ -1,5 +1,6 @@
-require "importer_exporter/version"
-
-module ImporterExporter
-  # Your code goes here...
-end
+require "./lib/importer_exporter/version"
+require "./lib/importer_exporter/format_converter"
+require "./lib/importer_exporter/product"
+require "./lib/importer_exporter/modifier"
+require "./lib/importer_exporter/input_type"
+require "./lib/importer_exporter/utils"

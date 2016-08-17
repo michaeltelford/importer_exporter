@@ -1,4 +1,13 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in importer_exporter.gemspec
-gemspec
+ruby '2.2.2'
+
+gem 'json'
+
+group :development do
+  gem 'bundler'
+  gem 'rake'
+  gem 'minitest'
+  gem 'byebug'
+  gem 'yard'
+end

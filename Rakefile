@@ -8,3 +8,12 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :default => :test
+
+desc "Compile all project Ruby files with warnings."
+task :compile do 
+    paths = Dir["**/*.rb"]
+    paths.each do |f|
+        puts "\nCompiling #{f}..."
+        puts `ruby -cw #{f}`
+    end
+end
